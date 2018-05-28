@@ -1,0 +1,23 @@
+{
+  "fitbit": {
+    "appUUID": "008610dc-7424-4074-87a5-739969eff3d3",
+    "appType": "app",
+    "appDisplayName": "Spotify HR",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#4caf50",
+    "requestedPermissions": [
+      "access_internet",
+      "access_heart_rate",
+      "run_background",
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Spotify HR"
+      }
+    }
+  }
+}

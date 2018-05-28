@@ -1,0 +1,125 @@
+<svg>
+  <rect id="background" />
+  
+  <rect id="logo-button" class="button" pointer-events="visible" x="0" y="0" width="70" height="70">
+    <image id="logo" x="5" y="5" width="40" height="40" href="icon.png" load="sync" />
+  </rect>
+  
+  <svg x="0" y="0" id="loading">
+      <text class="main-heading" x="50%" y="50%+5">Loading...</text>
+  </svg>
+  
+  <svg x="0" y="0" id="login-to-spotify">
+      <text class="main-heading" x="50%" y="50%+5">Please login to Spotify</text>
+      <text class="sub-heading" x="50%" y="50%+35">On the FitBit App</text>
+      <text class="sub-heading" x="50%" y="50%+60">Versa > Apps > Spotify HR > Settings</text>
+  </svg>
+  
+  <svg x="0" y="0" id="no-active-device">
+      <text class="main-heading" x="50%" y="50%+5">No active device found</text>
+      <text class="sub-heading" x="50%" y="50%+30">Please open Spotify on your device</text>
+  </svg>
+  
+  <svg x="0" y="0" id="no-internet">
+      <text class="main-heading" x="50%" y="50%+5">No Internet Connection</text>
+      <text class="sub-heading" x="50%" y="50%+30">Lost connection to the internet</text>
+  </svg>
+  
+  <svg x="0" y="0" id="connecting">
+      <text class="main-heading" x="50%" y="50%+5">Connecting</text>
+      <text class="sub-heading" x="50%" y="50%+30">Lost connection to the FitBit app</text>
+  </svg>
+  
+  <svg x="0" y="0" id="menu">
+    <text class="menu-title" x="50%" y="50">Menu</text>
+    
+    <svg id="menu-list" x="0" y="80" height="100%-80">
+      <rect id="menu-player-button" class="button" x="0" y="0" width="100%" height="70" pointer-events="visible">
+        <image x="20" y="0" width="50" height="50" href="icons/play-button-white.png" load="sync" />
+        <text x="85" y="33">Player</text>
+      </rect>
+      
+      <rect id="menu-playlists-button" class="button" x="0" y="70" width="100%" height="70" pointer-events="visible">
+        <image x="20" y="75" width="50" height="50" href="icons/list-icon-white.png" load="sync" />
+        <text x="85" y="110">Choose playlist</text>
+      </rect>
+      
+      <rect id="menu-volume-button" class="button" x="0" y="140" width="100%" height="70" pointer-events="visible">
+        <image x="20" y="150" width="50" height="50" href="icons/volume-icon-white.png" load="sync" />
+        <text x="85" y="185">Change volume</text>
+      </rect>
+    </svg>
+  </svg>
+  
+  <svg id="player">
+    <svg id="heart-rate" x="190" y="5" width="105" height="55">
+      <rect id="heart-rate-shuffle-button" class="button" x="0" y="0" width="100%" height="100%" pointer-events="visible">
+        <image id="heart-rate-shuffle-icon" x="0" y="5" width="45" height="45" href="icons/shuffle-icon-white.png" load="sync" />
+        <image id="heart-icon" x="50" y="0" width="55" height="100%" href="icons/heart-icon.png" load="sync" />
+        <text id="heart-rate-number" x="100%-27" y="50%+5">HR</text>
+      </rect>
+    </svg>
+    
+    <image id="back-button" class="button" x="10" y="107" width="70" height="70" href="icons/back-button-white.png" load="sync" pointer-events="visible" />
+    <image id="play-button" class="button" x="100" y="90" width="100" height="100" href="icons/play-button-white.png" load="sync" pointer-events="visible" />
+    <image id="pause-button" class="button" x="100" y="90" width="100" height="100" href="icons/pause-button-white.png" load="sync" pointer-events="visible" />
+    <image id="next-button" class="button" x="220" y="107" width="70" height="70" href="icons/skip-button-white.png" load="sync" pointer-events="visible" />
+    
+    <svg id="current-track" x="10" y="230" width="100%-20" height="100%-70">
+      <text id="player-current-track-name" x="0" y="0" width="100%-50">TRACK</text>
+      <text id="player-current-artist-name" x="0" y="25" width="100%-50">ARTIST</text>
+      <text id="player-current-playlist-name" x="0" y="50" width="100%-50">PLAYLIST</text>
+      
+      <rect id="player-menu-button" class="button" x="100%-70" y="0" width="70" height="70" pointer-events="visible">
+        <image x="100%-50" y="10" width="50" height="50" href="icons/more-button-white.png" load="sync" />
+      </rect>
+    </svg>
+  </svg>
+  
+  <svg id="playlists-picker" x="0" y="0">
+    <text class="playlist-title" x="50%" y="50">Choose a playlist...</text>
+    
+    <svg id="playlist-list" x="0" y="80" height="100%-80">
+      <rect id="previous-playlist-button" class="button" x="40" y="0" width="100%-80" height="40" pointer-events="visible">
+        <image x="50%-20" y="0" width="40" height="20" href="icons/chevron-up-white.png" load="sync" />
+      </rect>
+      
+      <text x="50%" y="70" pointer-events="visible" id="previous-playlist-text"></text>
+      <rect id="current-playlist-button" class="button" x="40" y="65" width="100%-80" height="70" pointer-events="visible">
+        <text x="50%" y="110" width="100%" pointer-events="visible" id="current-playlist-text" pointer-events="none"></text>
+      </rect>
+      <text x="50%" y="145" pointer-events="visible" id="next-playlist-text"></text>
+      
+      <rect id="next-playlist-button" class="button" x="40" y="170" width="100%-80" height="40" pointer-events="visible">
+        <image x="50%-20" y="190" width="40" height="20" href="icons/chevron-down-white.png" load="sync" />
+      </rect>
+    </svg>
+    
+    <rect id="playlists-done-button" class="button" x="100%-70" y="230" width="70" height="70" pointer-events="visible">
+      <image x="100%-60" y="240" width="50" height="50" href="icons/tick-icon-white.png" load="sync" />
+    </rect>
+  </svg>
+  
+  <svg id="volume" x="0" y="0">
+    <text class="volume-title" x="50%" y="50">Change volume...</text>
+    
+    <svg id="volume-control" x="0" y="80" height="100%-80">
+      <rect id="increase-volume-button" class="button" x="40" y="30" width="100%-80" height="40" pointer-events="visible">
+        <text x="50%" y="30">+</text>
+      </rect>
+      
+      <rect id="volume-bar-container" x="50%-10" y="50" width="20" height="110">
+        <rect id="volume-bar-fill" x="50%-10" width="20">
+        </rect>
+      </rect>
+      
+      <rect id="decrease-volume-button" class="button" x="40" y="185" width="100%-80" height="40" pointer-events="visible">
+        <text x="50%" y="205">-</text>
+      </rect>
+    
+      <rect id="volume-done-button" class="button" x="100%-70" y="150" width="70" height="70" pointer-events="visible">
+        <image x="100%-60" y="160" width="50" height="50" href="icons/tick-icon-white.png" load="sync" />
+      </rect>
+    </svg>
+  </svg>
+</svg>
