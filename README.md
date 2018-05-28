@@ -8,7 +8,7 @@ This is source code for the Spotify HR on the FitBit Versa.
 Features
 ========
 
-The app is remote controller for your Spotify account.
+The app is a remote controller for your Spotify account.
 
  - Remote control music playback
  - Change playlist
