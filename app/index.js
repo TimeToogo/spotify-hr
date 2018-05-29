@@ -27,6 +27,7 @@ const physicalButtons = new PhysicalButtons(ui, broker);
 const onScreenButtons = new OnScreenButtons(ui, broker);
 const menu = new Menu(ui, broker);
 
+let connected = false;
 heartRateTracker.initialize();
 userProfile.initialize();
 playerPage.initialize();
@@ -44,10 +45,18 @@ broker.registerHandler(Commands.UPDATE_UI, (state) => {
 broker.onConnectionLost(() => {
   ui.saveState();
   ui.render({page: 'connecting'});
+  connected = false;
 });
 
 broker.onConnectionOpened(() => {
   ui.restoreSavedStateOrDefault({page: 'loading'});
+  connected = true;
 });
 
 ui.render({page: 'loading'});
+
+setTimeout(() => {
+  if (!connected) {
+    ui.render({page: 'connecting'});
+  }
+}, 10 * 1000);
