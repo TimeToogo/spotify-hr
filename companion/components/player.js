@@ -84,6 +84,8 @@ class PlayerPage {
     app.state.playerPage.isPlaying = data.isPlaying;
     app.state.playerPage.currentPlaylistId = data.playlistId;
     app.state.playerPage.currentTrack = data.currentTrack;
+    app.state.playerPage.durationMs = data.durationMs;
+    app.state.playerPage.progressMs = data.progressMs;
     app.state.playerPage.millisecondsLeftOnTrack = data.durationMs - data.progressMs;
     app.state.playerPage.repeatMode = data.repeatMode;
     app.state.playerPage.shuffleMode = data.shuffleMode;

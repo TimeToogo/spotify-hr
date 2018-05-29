@@ -25,6 +25,8 @@ class App {
       },
       overrideCurrentPlaylistName: null,
       isPlaying: false,
+      durationMs: null,
+      progressMs: null,
       millisecondsLeftOnTrack: null,
       shuffleMode: null,
       repeatMode: null,
@@ -70,6 +72,10 @@ class App {
   getInferredTimeLeftOnCurrentTrack() {
     const millisecondsLeftOnTrack = this.state.playerPage.millisecondsLeftOnTrack;
     
+    if (!millisecondsLeftOnTrack) {
+      return null;
+    }
+    
     if (!this.state.playerPage.recievedUpdateAt) {
       return millisecondsLeftOnTrack;
     }
@@ -95,6 +101,9 @@ class App {
         isPlaying: this.state.playerPage.isPlaying,
         heartRateShuffleEnabled: this.state.playerPage.heartRateShuffleEnabled,
         currentHeartRate: this.state.currentHeartRate,
+        progressMs: this.state.playerPage.progressMs,
+        durationMs: this.state.playerPage.durationMs,
+        recievedUpdateAt: this.state.playerPage.recievedUpdateAt,
       },
       playlistsPage: {
         previous: playlistsPage.previous ? playlistsPage.previous.name : null,

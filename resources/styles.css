@@ -47,6 +47,12 @@ rect.button {
 
 /* Player page */
 
+#clock {
+  font-size: 16;
+  text-length: 10;
+  text-anchor: middle;
+}
+
 #heart-rate-number {
   font-size: 16;
   text-length: 5;
@@ -72,6 +78,14 @@ rect.button {
   font-size: 18;
   text-length: 32;
   text-overflow: ellipsis;
+}
+
+#track-progress-bar-container {
+  fill: #333333;
+}
+
+#track-progress-bar-fill {
+  fill: #dddddd;
 }
 
 /* Playlist page */

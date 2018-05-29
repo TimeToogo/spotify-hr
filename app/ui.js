@@ -37,12 +37,15 @@ class Ui {
         pauseButton: document.getElementById('pause-button'),
         nextButton: document.getElementById('next-button'),
         menuButton: document.getElementById('player-menu-button'),
+        clock: document.getElementById('clock'),
         heartRateShuffleButton: document.getElementById('heart-rate-shuffle-button'),
         heartRateShuffleIcon: document.getElementById('heart-rate-shuffle-icon'),
         currentPlaylistName: document.getElementById('player-current-playlist-name'),
         currentTrackName: document.getElementById('player-current-track-name'),
         currentArtistName: document.getElementById('player-current-artist-name'),
         currentHeartRate: document.getElementById('heart-rate-number'),
+        trackProgressBarContainer: document.getElementById('track-progress-bar-container'),
+        trackProgressBarFill: document.getElementById('track-progress-bar-fill'),
       },
       playlists: {
         container: document.getElementById('playlists-picker'),
@@ -67,6 +70,8 @@ class Ui {
       buttons: document.getElementsByClassName('button'),
     }
   };
+
+  save
         
   render(state) {
     let elements = this.elements;
@@ -112,6 +117,13 @@ class Ui {
     this.renderHeartRate(state.playerPage.currentHeartRate);
   }
 
+  renderPlayerProgressBar(percent) {
+    let elements = this.elements;
+    
+    const container = elements.page.player.trackProgressBarContainer;
+    elements.page.player.trackProgressBarFill.width = container.width * Math.min(1, percent || 0);
+  }
+
   renderPlaylistsPage(state) {
     let elements = this.elements;
     
@@ -126,7 +138,6 @@ class Ui {
     const container = elements.page.volume.volumeBarContainer;
     const volume = state.volumePage.currentVolume / 100;
     
-    console.log(`${container.y + (container.height * (1 - volume))} :: ${container.height * volume}`)
     elements.page.volume.volumeBarFill.y = container.y + (container.height * (1 - volume));
     elements.page.volume.volumeBarFill.height = container.height * volume;
   }

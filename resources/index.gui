@@ -52,6 +52,8 @@
   </svg>
   
   <svg id="player">
+    <text id="clock" x="50%" y="25" height="25">00:00 AM</text>
+    
     <svg id="heart-rate" x="190" y="5" width="105" height="55">
       <rect id="heart-rate-shuffle-button" class="button" x="0" y="0" width="100%" height="100%" pointer-events="visible">
         <image id="heart-rate-shuffle-icon" x="0" y="5" width="45" height="45" href="icons/shuffle-icon-white.png" load="sync" />
@@ -65,15 +67,20 @@
     <image id="pause-button" class="button" x="100" y="90" width="100" height="100" href="icons/pause-button-white.png" load="sync" pointer-events="visible" />
     <image id="next-button" class="button" x="220" y="107" width="70" height="70" href="icons/skip-button-white.png" load="sync" pointer-events="visible" />
     
-    <svg id="current-track" x="10" y="230" width="100%-20" height="100%-70">
-      <text id="player-current-track-name" x="0" y="0" width="100%-50">TRACK</text>
-      <text id="player-current-artist-name" x="0" y="25" width="100%-50">ARTIST</text>
-      <text id="player-current-playlist-name" x="0" y="50" width="100%-50">PLAYLIST</text>
+    <svg id="current-track" x="10" y="228" width="100%-20" height="100%-70">
+      <text id="player-current-track-name" x="0" y="5" width="100%-50">TRACK</text>
+      <text id="player-current-artist-name" x="0" y="30" width="100%-50">ARTIST</text>
+      <text id="player-current-playlist-name" x="0" y="55" width="100%-50">PLAYLIST</text>
       
       <rect id="player-menu-button" class="button" x="100%-70" y="0" width="70" height="70" pointer-events="visible">
         <image x="100%-50" y="10" width="50" height="50" href="icons/more-button-white.png" load="sync" />
       </rect>
     </svg>
+    
+    <rect id="track-progress-bar-container" x="0" y="298" width="300" height="2">
+      <rect id="track-progress-bar-fill" x="0" y="298" height="2">
+      </rect>
+    </rect>
   </svg>
   
   <svg id="playlists-picker" x="0" y="0">

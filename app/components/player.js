@@ -33,7 +33,27 @@ class PlayerPage {
       this.broker.sendCommand(Commands.TOGGLE_HEART_RATE_SHUFFLE);
     }
     
+    setInterval(() => this.updateProgressBar(), 1000);
+    
     console.log(`[FitBit] Initialized player page`);
+  }
+  
+  updateProgressBar() {
+    this.ui.renderPlayerProgressBar(this.getCurrentTrackProgress());
+  }
+  
+  getCurrentTrackProgress() {
+    if (!this.ui.currentState || !this.ui.currentState.playerPage || !this.ui.currentState.playerPage.progressMs) {
+      return null;
+    }
+    
+    const durationSinceUpdate = this.ui.currentState.playerPage.isPlaying
+      ? new Date().getTime() - this.ui.currentState.playerPage.recievedUpdateAt
+      : 0;
+    
+    const progress = (this.ui.currentState.playerPage.progressMs + durationSinceUpdate) / this.ui.currentState.playerPage.durationMs;
+    
+    return Math.min(1, progress);
   }
 }
 
