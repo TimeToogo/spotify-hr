@@ -107,7 +107,7 @@ class App {
       },
       playlistsPage: {
         previous: playlistsPage.previous ? playlistsPage.previous.name : null,
-        current: playlistsPage.current ? playlistsPage.current.name : null,
+        current: playlistsPage.current ? playlistsPage.current.name : 'Unknown',
         next: playlistsPage.next ? playlistsPage.next.name : null,
       },
       volumePage: {
