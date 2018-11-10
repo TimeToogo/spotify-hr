@@ -1,6 +1,7 @@
 import document from "document";
 import * as messaging from "messaging";
 import HearRateTracker from "./heart-rate";
+import { me as device } from "device";
 
 class Ui {
   savedState = [];
@@ -71,8 +72,14 @@ class Ui {
     }
   };
 
-  save
-        
+  initialize() {
+    if (!device.screen) { 
+      device.screen = { width: 348, height: 250 };
+    }
+    
+    console.log(`Dimensions: ${device.screen.width}x${device.screen.height}`);
+  }
+
   render(state) {
     let elements = this.elements;
     
@@ -121,7 +128,7 @@ class Ui {
     let elements = this.elements;
     
     const container = elements.page.player.trackProgressBarContainer;
-    elements.page.player.trackProgressBarFill.width = container.width * Math.min(1, percent || 0);
+    elements.page.player.trackProgressBarFill.width = device.screen.width * Math.min(1, percent || 0);
   }
 
   renderPlaylistsPage(state) {

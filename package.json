@@ -12,12 +12,16 @@
       "access_user_profile"
     ],
     "buildTargets": [
-      "meson"
+      "meson",
+      "higgs"
     ],
     "i18n": {
       "en": {
         "name": "Spotify HR"
       }
     }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~1.0.0"
   }
 }

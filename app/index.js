@@ -40,6 +40,7 @@ logo.initialize();
 physicalButtons.initialize();
 onScreenButtons.initialize();
 menu.initialize();
+ui.initialize();
 
 broker.registerHandler(Commands.UPDATE_UI, (state) => {
   ui.render(state);

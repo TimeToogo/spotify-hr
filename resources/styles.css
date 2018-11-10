@@ -32,6 +32,12 @@ rect.button {
   text-anchor: middle;
 }
 
+.sub-heading--second {
+  font-size: 20;
+  text-length: 64;
+  text-anchor: middle;
+}
+
 /* Menu page */
 
 #menu .menu-title {
@@ -147,6 +153,14 @@ rect.button {
   font-size: 18;
   text-length: 32;
   text-overflow: ellipsis;
+}
+
+#track-progress-bar-container {
+  fill: #333333;
+}
+
+#track-progress-bar-fill {
+  fill: #dddddd;
 }
 
 /* Volume page */

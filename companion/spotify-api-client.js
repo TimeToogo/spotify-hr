@@ -28,7 +28,7 @@ class ApiClient {
       try {
         text = await response.text();
       } catch(error) {
-        console.log(`Empty API response: ${method} ${endpoint} ${error}`);
+        console.log(`Empty API response: ${method} ${endpoint} ${response.status} ${error}`);
         text = null;
       }
       let data = text ? JSON.parse(text) : null;
@@ -140,7 +140,7 @@ class ApiClient {
       playlistId,
       repeatMode: player.repeat_state,
       shuffleMode: player.shuffle_state,
-      volumePercent: player.device.volume_percent
+      volumePercent: player.device ? player.device.volume_percent : null,
     };
   }
   

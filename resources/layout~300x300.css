@@ -1,0 +1,387 @@
+#background {
+  width: 100%;
+  height: 100%;
+}
+
+#logo-button {
+  x: 0;
+  y: 0;
+  width: 70;
+  height: 70;
+}
+
+#logo {
+  x: 5;
+  y: 5;
+  width: 40;
+  height: 40;
+}
+
+.page {
+  x: 0;
+  y: 0;
+}
+
+.main-heading {
+  x: 50%;
+  y: 50%+5;
+}
+
+.sub-heading {
+  x: 50%;
+  y: 50%+35;
+}
+
+.sub-heading--second {
+  x: 50%;
+  y: 50%+60;
+}
+
+#login-to-spotify {
+  x: 0;
+  y: 0;
+}
+
+/**
+ * Menu
+ */
+
+#menu .menu-title {
+  x: 50%;
+  y: 50;
+}
+
+#menu-list {
+  x: 0;
+  y: 80;
+  height: 100%-80;
+}
+
+#menu-player-button {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 70;
+}
+
+#menu-player-button image {
+  x: 20;
+  y: 0;
+  width: 50;
+  height: 50;
+}
+
+#menu-player-button text {
+  x: 85;
+  y: 33;
+}
+
+#menu-playlists-button {
+  x: 0;
+  y: 70;
+  width: 100%;
+  height: 70;
+}
+
+#menu-playlists-button image {
+  x: 20;
+  y: 75;
+  width: 50;
+  height: 50;
+}
+
+#menu-playlists-button text {
+  x: 85;
+  y: 110;
+}
+
+#menu-volume-button {
+  x: 0;
+  y: 140;
+  width: 100%;
+  height: 70;
+}
+
+#menu-volume-button image {
+  x: 20;
+  y: 150;
+  width: 50;
+  height: 50;
+}
+
+#menu-volume-button text {
+  x: 85;
+  y: 185;
+}
+
+/**
+ * Player
+ */
+
+#clock {
+  x: 50%;
+  y: 25;
+  height: 25;
+}
+
+#heart-rate {
+  x: 190;
+  y: 5;
+  width: 105;
+  height: 55;
+}
+
+#heart-rate-shuffle-button {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#heart-rate-shuffle-icon {
+  x: 0;
+  y: 5;
+  width: 45;
+  height: 45;
+}
+
+#heart-icon {
+  x: 50;
+  y: 0;
+  width: 55;
+  height: 100%;
+}
+
+#heart-rate-number {
+  x: 100%-27;
+  y: 50%+5;
+}
+
+#back-button {
+  x: 10;
+  y: 107;
+  width: 70;
+  height: 70;
+}
+
+#play-button {
+  x: 100;
+  y: 90;
+  width: 100;
+  height: 100;
+}
+
+#pause-button {
+  x: 100;
+  y: 90;
+  width: 100;
+  height: 100;
+}
+
+#next-button {
+  x: 220;
+  y: 107;
+  width: 70;
+  height: 70;
+}
+
+#current-track {
+  x: 10;
+  y: 228;
+  width: 100%-20;
+  height: 100%-70;
+}
+
+#player-current-track-name {
+  x: 0;
+  y: 5;
+  width: 100%-50;
+}
+
+#player-current-artist-name {
+  x: 0;
+  y: 30;
+  width: 100%-50;
+}
+ 
+#player-current-playlist-name {
+  x: 0;
+  y: 55;
+  width: 100%-50;
+}
+
+#player-menu-button {
+  x: 100%-70;
+  y: 0;
+  width: 70;
+  height: 70;
+}
+
+#player-menu-button image {
+  x: 100%-50;
+  y: 10;
+  width: 50;
+  height: 50;
+}
+
+#track-progress-bar-container {
+  x: 0;
+  y: 298;
+  width: 300;
+  height: 2;
+  fill: #333333;
+}
+
+#track-progress-bar-fill {
+  x: 0;
+  y: 298;
+  width: 100%;
+  height: 2;
+  fill: #dddddd;
+}
+
+/**
+ * Playlists
+ */
+
+#playlists-picker .playlist-title {
+  x: 50%;
+  y: 50;
+}
+
+#playlist-list {
+  x: 0;
+  y: 80;
+  height: 100%-80;
+}
+
+#previous-playlist-button {
+  x: 40;
+  y: 0;
+  width: 100%-80;
+  height: 40;
+}
+
+#previous-playlist-button image {
+  x: 50%-20;
+  y: 0;
+  width: 40;
+  height: 20;
+}
+
+#previous-playlist-text {
+  x: 50%;
+  y: 70;
+}
+
+#current-playlist-button {
+  x: 40;
+  y: 65;
+  width: 100%-80;
+  height: 70;
+}
+
+#current-playlist-text {
+  x: 50%;
+  y: 110;
+  width: 100%;
+}
+
+#next-playlist-text {
+  x: 50%;
+  y: 145;
+}
+
+#next-playlist-button {
+  x: 40;
+  y: 170;
+  width: 100%-80;
+  height: 40;
+}
+
+#next-playlist-button image {
+  x: 50%-20;
+  y: 190;
+  width: 40;
+  height: 20;
+}
+
+#playlists-done-button {
+  x: 100%-70;
+  y: 230;
+  width: 70;
+  height: 70;
+}
+
+#playlists-done-button image {
+  x: 100%-60;
+  y: 240;
+  width: 50;
+  height: 50;
+}
+
+/**
+ * Volume
+ */
+#volume .volume-title {
+  x: 50%;
+  y: 50;
+}
+
+#volume-control {
+  x: 0;
+  y: 80;
+  height: 100%-80;
+}
+
+#increase-volume-button {
+  x: 40;
+  y: 30;
+  width: 100%-80;
+  height: 40;
+}
+
+#increase-volume-button text {
+  x: 50%;
+  y: 30;
+}
+
+#volume-bar-container {
+  x: 50%-10;
+  y: 50;
+  width: 20;
+  height: 110;
+}
+
+#volume-bar-fill {
+  x: 50%-10;
+  width: 20;
+}
+
+#decrease-volume-button {
+  x: 40;
+  y: 185;
+  width: 100%-80;
+  height: 40;
+}
+
+#decrease-volume-button text {
+  x: 50%-1;
+  y: 205;
+}
+
+#volume-done-button {
+  x: 100%-70;
+  y: 150;
+  width: 70;
+  height: 70;
+}
+
+#volume-done-button image {
+  x: 100%-60;
+  y: 160;
+  width: 50;
+  height: 50;
+}
+
+
