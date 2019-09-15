@@ -28,7 +28,7 @@ A nice addition to enjoy matching music to any varied workout.
 Common Issues
 =============
 
-*No active device found*
+**No active device found**
 
 Please ensure that:
 
@@ -38,12 +38,12 @@ Please ensure that:
 
 
 
-*Playback controls are not working*
+**Playback controls are not working**
 
 Unfortunately controlling playback requires a Premium Spotify account. This is restriction imposed by the Spotify Web API.
 
 
-*Lost connection to FitBit app*
+**Lost connection to FitBit app**
 
 This usually happens when the Spotify app cannot communicate with the FitBit app on your iOS/Android device.
 
@@ -55,7 +55,7 @@ Please ensure that:
 If it's still not working, please open the FitBit app on your phone and sync your FitBit by dragging down on the main screen.
 
 
-*Logged in to wrong account*
+**Logged in to wrong account**
 
 1. [Visit Spotify in your browser](https://www.spotify.com/)
 2. Click “Log Out” from the menu
